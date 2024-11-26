@@ -8,7 +8,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   padding: 0 20px;
-  overflow-x: hidden; /* Prevent horizontal scrolling of the entire page */
+  overflow-x: hidden;
 }
 
 header {
@@ -17,28 +17,20 @@ header {
   padding: 10px 20px;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  justify-content: center; /* Center everything horizontally */
+  align-items: center; /* Center elements vertically */
+  flex-direction: column; /* Stack elements vertically */
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.logo img {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
+header > .logo {
+  position: absolute; /* Fix the logo to the left side */
+  left: 20px; /* Give some space from the left edge */
 }
 
 nav {
   display: flex;
   gap: 20px;
   justify-content: center;
-  flex-wrap: wrap;
   margin-bottom: 10px;
 }
 
@@ -67,7 +59,6 @@ nav a {
   background-color: #444;
   border-radius: 20px;
   padding: 5px 15px;
-  margin-top: 10px;
   width: 100%;
   max-width: 600px;
 }
@@ -116,26 +107,26 @@ nav a {
 .card-container {
   display: flex;
   gap: 20px;
-  justify-content: center; /* Center the cards */
-  overflow-x: auto; /* Horizontal scrolling inside the container */
-  scroll-snap-type: x mandatory; /* Smooth snapping of cards */
-  padding-bottom: 10px; /* Space for horizontal scrollbar */
-  width: 80%; /* Limit width to 80% of the screen */
-  max-width: 1200px; /* Max width for the container */
-  margin: 0 auto; /* Center the container on the page */
+  justify-content: center;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .card-container::-webkit-scrollbar {
-  height: 10px; /* Vertical scrollbar for the card container */
+  height: 10px;
 }
 
 .card-container::-webkit-scrollbar-thumb {
-  background-color: #888; /* Style of the scrollbar */
+  background-color: #888;
   border-radius: 10px;
 }
 
 .card {
-  width: 150px; /* Fixed width for the cards */
+  width: 150px;
   height: 150px;
   background-color: #ccc;
   display: flex;
@@ -143,9 +134,9 @@ nav a {
   justify-content: center;
   font-size: 14px;
   text-align: center;
-  flex-shrink: 0; /* Prevent shrinking of card */
+  flex-shrink: 0;
   margin-bottom: 10px;
-  scroll-snap-align: start; /* Align cards when scrolling */
+  scroll-snap-align: start;
 }
 
 .card img {
@@ -185,6 +176,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack header items vertically */
+  }
+
   .logo img {
     width: 25px;
     height: 25px;
@@ -195,7 +190,7 @@ footer {
   }
 
   .card {
-    width: 120px; /* Adjust card size for smaller screens */
+    width: 120px;
     height: 120px;
   }
 
@@ -229,7 +224,7 @@ footer {
   }
 
   .card {
-    width: 100px; /* Adjust card size for very small screens */
+    width: 100px;
     height: 100px;
     font-size: 12px;
   }
