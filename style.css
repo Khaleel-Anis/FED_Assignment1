@@ -2,12 +2,20 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 0 20px;
+  overflow-x: hidden; /* Prevent horizontal scrolling of the entire page */
 }
 
 header {
   background-color: #000;
   color: #fff;
   padding: 10px 20px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +24,8 @@ header {
 
 .logo {
   display: flex;
-  align-items: left;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .logo img {
@@ -28,6 +37,9 @@ header {
 nav {
   display: flex;
   gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 nav a {
@@ -39,6 +51,7 @@ nav a {
 .auth-links {
   display: flex;
   gap: 15px;
+  margin-bottom: 10px;
 }
 
 .auth-links a {
@@ -55,6 +68,8 @@ nav a {
   border-radius: 20px;
   padding: 5px 15px;
   margin-top: 10px;
+  width: 100%;
+  max-width: 600px;
 }
 
 .search-bar input {
@@ -62,7 +77,7 @@ nav a {
   border: none;
   outline: none;
   color: white;
-  width: 900px;
+  width: 100%;
   padding: 5px 10px;
   font-size: 16px;
 }
@@ -76,28 +91,51 @@ nav a {
   cursor: pointer;
 }
 
-
 .main {
   padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section {
   margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .section h2 {
   font-size: 20px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .card-container {
   display: flex;
   gap: 20px;
+  justify-content: center; /* Center the cards */
+  overflow-x: auto; /* Horizontal scrolling inside the container */
+  scroll-snap-type: x mandatory; /* Smooth snapping of cards */
+  padding-bottom: 10px; /* Space for horizontal scrollbar */
+  width: 80%; /* Limit width to 80% of the screen */
+  max-width: 1200px; /* Max width for the container */
+  margin: 0 auto; /* Center the container on the page */
+}
+
+.card-container::-webkit-scrollbar {
+  height: 10px; /* Vertical scrollbar for the card container */
+}
+
+.card-container::-webkit-scrollbar-thumb {
+  background-color: #888; /* Style of the scrollbar */
+  border-radius: 10px;
 }
 
 .card {
-  width: 150px;
+  width: 150px; /* Fixed width for the cards */
   height: 150px;
   background-color: #ccc;
   display: flex;
@@ -105,6 +143,9 @@ nav a {
   justify-content: center;
   font-size: 14px;
   text-align: center;
+  flex-shrink: 0; /* Prevent shrinking of card */
+  margin-bottom: 10px;
+  scroll-snap-align: start; /* Align cards when scrolling */
 }
 
 .card img {
@@ -117,13 +158,87 @@ footer {
   background-color: #000;
   color: #fff;
   padding: 10px 20px;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+@media (max-width: 1024px) {
+  .logo img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .search-bar input {
+    font-size: 14px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .auth-links a {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 768px) {
-    .search-bar input {
-      width: 100%;
-    }
+  .logo img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .search-bar input {
+    font-size: 14px;
+  }
+
+  .card {
+    width: 120px; /* Adjust card size for smaller screens */
+    height: 120px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .auth-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-bar {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  .logo {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .search-bar input {
+    font-size: 12px;
+  }
+
+  .card {
+    width: 100px; /* Adjust card size for very small screens */
+    height: 100px;
+    font-size: 12px;
+  }
+
+  .card-container {
+    gap: 10px;
+  }
+
+  footer {
+    padding: 10px;
+  }
 }
