@@ -22,3 +22,6 @@ https://www.figma.com/design/JfLV3kLOfMWDBeTzJ4LENG/FED_S10270243_Khaleel_Assg1_
 
 Figma Prototype Link
 https://www.figma.com/proto/JfLV3kLOfMWDBeTzJ4LENG/FED_S10270243_Khaleel_Assg1_wireframe?node-id=0-1&t=1ZDQtsUlBOeax6UI-1
+
+GitHub Link
+https://github.com/Khaleel-Anis/FED_S10270243_Khaleel_Assg1
