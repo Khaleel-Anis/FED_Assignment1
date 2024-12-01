@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadata for character encoding and responsive viewport settings -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Link to external CSS file for styling the page -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Link to external JavaScript file (with defer attribute to load after the page) -->
+  <script src="scripts.js" defer></script>
+  
+  <!-- Title of the page, which is displayed in the browser tab -->
+  <title>Product Page</title>
+</head>
+<body>
+  <!-- Header section containing the navigation and search bar -->
+  <header>
+    <nav>
+      <!-- Link to homepage with the logo -->
+      <a href="index.html"><img src="images/record-playahs-high-resolution-logo-transparent.png" alt="Record Playahs Logo" id="logo"></a>
+      
+      <!-- Navigation menu with links to other pages -->
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Vinyl Records</a></li>
+        <li><a href="#">New Arrival</a></li>
+        <li><a href="#">Visit Us</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+      
+      <!-- Section containing authentication links (Register, Login, and Cart) -->
+      <section class="auth-links">
+        <a href="#">Register</a>
+        <a href="#">Login</a>
+        <a href="#"><img src="images/cart-icon.png" alt="Cart"></a>
+      </section>
+    </nav>
+    
+    <!-- Search form for searching products on the website -->
+    <form id="search-bar">
+      <input type="text" placeholder="Search for record">
+      <button type="submit">Search</button>
+    </form>
+  </header>
+
+  <!-- Main section where the product details are displayed -->
+  <main>
+    <section class="product-details">
+      <!-- Left section: Product image and description -->
+      <aside class="product-left">
+        <figure class="product-image">
+          <!-- Display the product image (Lil Yachty album cover) -->
+          <img src="images/lil yachty.jpg" alt="Lil Yachty Album">
+        </figure>
+        
+        <section class="product-description">
+          <!-- Product description with details about the album -->
+          <h2>Product Description</h2>
+          <p>Let's Start Here is the fifth studio album by the American rapper Lil Yachty, 
+            released on January 27, 2023, through Motown and Quality Control Music. It is his 
+            first studio album since Lil Boat 3 (2020) and follows his 2021 mixtape Michigan 
+            Boy Boat. The album marks a departure from Lil Yachty's signature trap sound, 
+            being heavily influenced by psychedelic rock.
+            Let's Start Here received generally positive reviews from music critics. 
+            It debuted at number nine on the US Billboard 200 and at number one on three 
+            different Billboard charts, earning 36,000 album-equivalent units in its first week.</p>
+          
+          <!-- Payment and Delivery information -->
+          <h2>Payments & Delivery</h2>
+          <p>Payments are not charged until the moment of dispatch, and pre-order payments are not charged until the week of release.</p>
+          <p>Click & Collect from our Singapore store and pay $0 on shipping.</p>
+          <p>Tracked Global shipping is available on all products.</p>
+          <p>In-stock items dispatched in 24-48 hours.</p>
+          <p>Carefully packaged in recycled packaging.</p>
+          <p>For all information on Shipping and Orders click here.</p>
+        </section>
+      </aside>
+
+      <!-- Right section: Product details (title, catalog number, price, and actions) -->
+      <article class="product-info">
+        <!-- Product name and album details -->
+        <h1>Lil Yachty</h1>
+        <h2>Let's Start Here</h2>
+        <h3>Motown</h3>
+        
+        <!-- Additional product meta information -->
+        <section class="product-meta">
+          <p><strong>Color:</strong> Black</p>
+          <p><strong>Price:</strong> S$150.20</p>
+          <p><strong>Released:</strong> 7/11/1994</p>
+          <p><strong>Catalog Number:</strong> 154965456465</p>
+          <p><strong>Purchase Limit:</strong> 3</p>
+        </section>
+        
+        <!-- Product action buttons (Buy Now, Add to Wishlist) -->
+        <section class="product-actions">
+          <!-- Buy Now button -->
+          <button class="buy-now">Buy Now</button>
+          
+          <!-- Wishlist button with heart icon -->
+          <button class="wishlist"><img src="images/heart-icon.png" alt="Wishlist"></button>
+        </section>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer section with social media links and customer service information -->
+  <footer>
+    <section>
+      <!-- Connect with us: Section with social media icons -->
+      <h3>Connect With Us</h3>
+      <p>Follow us on our social media channels for updates.</p>
+      <section class="social-icons">
+        <a href="#" aria-label="TikTok"><img src="images/tiktok-icon.png" alt="TikTok Icon"></a>
+        <a href="#" aria-label="Facebook"><img src="images/facebook-icon.png" alt="Facebook Icon"></a>
+        <a href="#" aria-label="Instagram"><img src="images/instagram-icon.png" alt="Instagram Icon"></a>
+      </section>
+    </section>
+    
+    <!-- Keep up with us: Email subscription form -->
+    <section>
+      <h3>Keep up With Us</h3>
+      <p>Exclusives, pre-orders, back in stock — sign up to receive emails!</p>
+      <form>
+        <input type="email" placeholder="Your Email">
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+    
+    <!-- Customer Service section with helpful links -->
+    <section>
+      <h3>Customer Service</h3>
+      <ul>
+        <li><a href="#">Your Orders</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Accessibility</a></li>
+      </ul>
+    </section>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,876 @@
+* {
+    /* This rule applies to: * */
+        margin: 0; /* This sets the margin property */
+        padding: 0; /* This sets the padding property */
+        box-sizing: border-box; /* This sets the box-sizing property */
+    }
+    
+    .product-details {
+    /* This rule applies to: .product-details */
+        display: flex; /* This sets the display property */
+        gap: 40px; /* This sets the gap property */
+        padding: 40px; /* This sets the padding property */
+        max-width: 1200px; /* This sets the max-width property */
+        margin: 0 auto; /* This sets the margin property */
+    }
+    
+    .product-image img {
+    /* This rule applies to: .product-image img */
+        max-width: 400px; /* This sets the max-width property */
+        height: auto; /* This sets the height property */
+        border-radius: 10px; /* This sets the border-radius property */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* This sets the box-shadow property */
+    }
+    
+    .product-info {
+    /* This rule applies to: .product-info */
+        display: flex; /* This sets the display property */
+        flex-direction: column; /* This sets the flex-direction property */
+        gap: 10px; /* This sets the gap property */
+        max-width: 600px; /* This sets the max-width property */
+    }
+    
+    .product-info h1,
+    .product-info h2,
+    .product-info h3 {
+    /* This rule applies to: .product-info h3 */
+        margin-bottom: 10px; /* This sets the margin-bottom property */
+    }
+    
+    .product-meta p {
+    /* This rule applies to: .product-meta p */
+        font-size: 1rem; /* This sets the font-size property */
+        margin: 5px 0; /* This sets the margin property */
+        color: #555; /* This sets the color property */
+    }
+    
+    .product-actions {
+    /* This rule applies to: .product-actions */
+        display: flex; /* This sets the display property */
+        gap: 10px; /* This sets the gap property */
+        margin-top: 20px; /* This sets the margin-top property */
+    }
+    
+    .buy-now {
+    /* This rule applies to: .buy-now */
+        padding: 10px 20px; /* This sets the padding property */
+        background-color: #e74c3c; /* This sets the background-color property */
+        color: white; /* This sets the color property */
+        border: none; /* This sets the border property */
+        border-radius: 5px; /* This sets the border-radius property */
+        font-size: 1rem; /* This sets the font-size property */
+        cursor: pointer; /* This sets the cursor property */
+        font-weight: bold; /* This sets the font-weight property */
+        transition: background-color 0.3s ease; /* This sets the transition property */
+    }
+    
+    .buy-now:hover {
+    /* This rule applies to: .buy-now:hover */
+        background-color: #c0392b; /* This sets the background-color property */
+    }
+    
+    .wishlist {
+    /* This rule applies to: .wishlist */
+        padding: 10px; /* This sets the padding property */
+        background-color: #f0f0f0; /* This sets the background-color property */
+        border: none; /* This sets the border property */
+        border-radius: 5px; /* This sets the border-radius property */
+        cursor: pointer; /* This sets the cursor property */
+    }
+    
+    .product-description {
+    /* This rule applies to: .product-description */
+        padding: 40px; /* This sets the padding property */
+        max-width: 800px; /* This sets the max-width property */
+        margin: 0 auto; /* This sets the margin property */
+    }
+    
+    .product-description h2 {
+    /* This rule applies to: .product-description h2 */
+        font-size: 1.5rem; /* This sets the font-size property */
+        margin-bottom: 10px; /* This sets the margin-bottom property */
+        color: #333; /* This sets the color property */
+    }
+    
+    .product-description p {
+    /* This rule applies to: .product-description p */
+        font-size: 1rem; /* This sets the font-size property */
+        color: #666; /* This sets the color property */
+        line-height: 1.6; /* This sets the line-height property */
+        margin-bottom: 20px; /* This sets the margin-bottom property */
+    }
+    
+    body {
+    /* This rule applies to: body */
+        font-family: Arial, sans-serif; /* This sets the font-family property */
+        line-height: 1.6; /* This sets the line-height property */
+        color: #333; /* This sets the color property */
+    }
+    
+    main.buy-page {
+    /* This rule applies to: main.buy-page */
+        display: flex; /* This sets the display property */
+        justify-content: space-between; /* This sets the justify-content property */
+        padding: 40px; /* This sets the padding property */
+        max-width: 1200px; /* This sets the max-width property */
+        margin: 0 auto; /* This sets the margin property */
+    }
+    
+    section.delivery-form {
+    /* This rule applies to: section.delivery-form */
+        flex: 3; /* This sets the flex property */
+        margin-right: 40px; /* This sets the margin-right property */
+    }
+    
+    section.delivery-form h2 {
+    /* This rule applies to: section.delivery-form h2 */
+        font-size: 1.5rem; /* This sets the font-size property */
+        margin-bottom: 20px; /* This sets the margin-bottom property */
+        color: #333; /* This sets the color property */
+        border-bottom: 1px solid #ccc; /* This sets the border-bottom property */
+        padding-bottom: 5px; /* This sets the padding-bottom property */
+    }
+    
+    section.delivery-form form {
+    /* This rule applies to: section.delivery-form form */
+        display: flex; /* This sets the display property */
+        flex-direction: column; /* This sets the flex-direction property */
+        gap: 20px; /* This sets the gap property */
+    }
+    
+    span.form-row {
+    /* This rule applies to: span.form-row */
+        display: flex; /* This sets the display property */
+        gap: 20px; /* This sets the gap property */
+    }
+    
+    section.delivery-form input {
+    /* This rule applies to: section.delivery-form input */
+        width: 100%; /* This sets the width property */
+        padding: 10px; /* This sets the padding property */
+        border: 1px solid #ccc; /* This sets the border property */
+        border-radius: 5px; /* This sets the border-radius property */
+        background-color: #f7f7f7; /* This sets the background-color property */
+        margin-bottom: 10px; /* This sets the margin-bottom property */
+    }
+    
+    .save-button {
+    /* This rule applies to: .save-button */
+        padding: 15px; /* This sets the padding property */
+        background-color: #e74c3c; /* This sets the background-color property */
+        color: white; /* This sets the color property */
+        border: none; /* This sets the border property */
+        border-radius: 5px; /* This sets the border-radius property */
+        cursor: pointer; /* This sets the cursor property */
+        font-size: 1rem; /* This sets the font-size property */
+        font-weight: bold; /* This sets the font-weight property */
+        transition: background-color 0.3s ease; /* This sets the transition property */
+    }
+    
+    .save-button:hover {
+    /* This rule applies to: .save-button:hover */
+        background-color: #c0392b; /* This sets the background-color property */
+    }
+    
+    aside.basket-summary {
+    /* This rule applies to: aside.basket-summary */
+        flex: 2; /* This sets the flex property */
+        background-color: #f7f7f7; /* This sets the background-color property */
+        padding: 20px; /* This sets the padding property */
+        border-radius: 10px; /* This sets the border-radius property */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* This sets the box-shadow property */
+    }
+    
+    aside.basket-summary h2 {
+    /* This rule applies to: aside.basket-summary h2 */
+        font-size: 1.5rem; /* This sets the font-size property */
+        margin-bottom: 20px; /* This sets the margin-bottom property */
+    }
+    
+    figure.basket-item {
+    /* This rule applies to: figure.basket-item */
+        display: flex; /* This sets the display property */
+        gap: 15px; /* This sets the gap property */
+        margin-bottom: 20px; /* This sets the margin-bottom property */
+    }
+    
+    figure.basket-item img {
+    /* This rule applies to: figure.basket-item img */
+        width: 80px; /* This sets the width property */
+        height: 80px; /* This sets the height property */
+        border-radius: 5px; /* This sets the border-radius property */
+    }
+    
+    figure.basket-item figcaption p {
+    /* This rule applies to: figure.basket-item figcaption p */
+        margin: 5px 0; /* This sets the margin property */
+        font-size: 0.9rem; /* This sets the font-size property */
+    }
+    
+    section.basket-total {
+    /* This rule applies to: section.basket-total */
+        margin-top: 20px; /* This sets the margin-top property */
+    }
+    
+    section.basket-total p {
+    /* This rule applies to: section.basket-total p */
+        font-size: 1rem; /* This sets the font-size property */
+        margin: 10px 0; /* This sets the margin property */
+    }
+    
+    section.basket-total hr {
+    /* This rule applies to: section.basket-total hr */
+        border: 0.5px solid #ccc; /* This sets the border property */
+        margin: 10px 0; /* This sets the margin property */
+    }
+    
+    aside.basket-summary input {
+    /* This rule applies to: aside.basket-summary input */
+        width: 100%; /* This sets the width property */
+        padding: 10px; /* This sets the padding property */
+        border: 1px solid #ccc; /* This sets the border property */
+        border-radius: 5px; /* This sets the border-radius property */
+        margin-top: 10px; /* This sets the margin-top property */
+    }
+    
+    header {
+    /* This rule applies to: header */
+        display: flex; /* This sets the display property */
+        flex-direction: column; /* This sets the flex-direction property */
+        background-color: #1c1c1c; /* This sets the background-color property */
+        color: white; /* This sets the color property */
+        padding: 10px 20px; /* This sets the padding property */
+    }
+    
+    #logo {
+    /* This rule applies to: #logo */
+        max-width: 120px; /* This sets the max-width property */
+        height: auto; /* This sets the height property */
+        margin-right: 20px; /* This sets the margin-right property */
+    }
+    
+    .carousel-container {
+    /* This rule applies to: .carousel-container */
+        position: relative; /* This sets the position property */
+        display: flex; /* This sets the display property */
+        align-items: center; /* This sets the align-items property */
+        overflow: hidden; /* This sets the overflow property */
+        width: 100%; /* This sets the width property */
+        max-width: 1200px; /* This sets the max-width property */
+        margin: 0 auto; /* This sets the margin property */
+    }
+    
+    .carousel-track {
+    /* This rule applies to: .carousel-track */
+        display: flex; /* This sets the display property */
+        transition: transform 0.5s ease-in-out; /* This sets the transition property */
+        will-change: transform; /* This sets the will-change property */
+    }
+    
+    .carousel-track ul {
+    /* This rule applies to: .carousel-track ul */
+        display: flex; /* This sets the display property */
+        gap: 20px; /* This sets the gap property */
+        padding: 0; /* This sets the padding property */
+        margin: 0; /* This sets the margin property */
+        list-style: none; /* This sets the list-style property */
+        width: max-content; /* This sets the width property */
+        transition: transform 0.5s ease-in-out; /* This sets the transition property */
+        scrollbar-width: none; /* This sets the scrollbar-width property */
+    }
+    
+    .carousel-track::-webkit-scrollbar {
+    /* This rule applies to: .carousel-track::-webkit-scrollbar */
+        display: none; /* This sets the display property */
+    }
+    
+    .carousel-track ul li {
+    /* This rule applies to: .carousel-track ul li */
+        background-color: transparent; /* Remove background */ /* This sets the background-color property */
+        border-radius: 0; /* Remove rounded corners */ /* This sets the border-radius property */
+        box-shadow: none; /* Remove shadow */ /* This sets the box-shadow property */
+        padding: 0; /* Remove padding */ /* This sets the padding property */
+        margin: 0; /* Remove any margin */ /* This sets the margin property */
+        width: auto; /* Let the image determine the width */ /* This sets the width property */
+        height: auto; /* Let the image determine the height */ /* This sets the height property */
+        display: inline-block; /* Ensure it respects the natural flow */ /* This sets the display property */
+        overflow: visible; /* Allow images to overflow naturally */ /* This sets the overflow property */
+    }
+    
+    /* Images */
+    .carousel-track ul li img {
+    /* This rule applies to: .carousel-track ul li img */
+        width: auto; /* Allow the image to take its natural size */ /* This sets the width property */
+        height: auto; /* Maintain the image's aspect ratio */ /* This sets the height property */
+        object-fit: contain; /* Prevent any distortion */ /* This sets the object-fit property */
+        border-radius: 0; /* No rounded corners */ /* This sets the border-radius property */
+        box-shadow: none; /* No additional shadow */ /* This sets the box-shadow property */
+        display: block; /* Ensure the image is a block-level element */ /* This sets the display property */
+        margin: 0 auto; /* Center images if needed */ /* This sets the margin property */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */ /* This sets the transition property */
+    }
+    
+    .carousel-track ul li:hover img {
+    /* This rule applies to: .carousel-track ul li:hover img */
+        transform: scale(1.5); /* Enlarge the image */ /* This sets the transform property */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add a shadow effect */ /* This sets the box-shadow property */
+        z-index: 1; /* Ensure the image appears above others */ /* This sets the z-index property */
+    }
+    
+    /* Carousel Buttons */
+    .carousel-button {
+    /* This rule applies to: .carousel-button */
+        position: absolute; /* This sets the position property */
+        top: 50%; /* This sets the top property */
+        transform: translateY(-50%); /* This sets the transform property */
+        width: 40px; /* This sets the width property */
+        height: 40px; /* This sets the height property */
+        background-color: rgba(0, 0, 0, 0.5); /* This sets the background-color property */
+        color: white; /* This sets the color property */
+        border: none; /* This sets the border property */
+        border-radius: 50%; /* This sets the border-radius property */
+        cursor: pointer; /* This sets the cursor property */
+        z-index: 10; /* This sets the z-index property */
+    }
+    
+    .carousel-button.left {
+    /* This rule applies to: .carousel-button.left */
+        left: 10px; /* This sets the left property */
+    }
+    
+    .carousel-button.right {
+    /* This rule applies to: .carousel-button.right */
+        right: 10px; /* This sets the right property */
+    }
+    
+    
+    nav {
+    /* This rule applies to: nav */
+        display: flex; /* This sets the display property */
+        justify-content: space-between; /* This sets the justify-content property */
+        align-items: center; /* This sets the align-items property */
+    }
+    
+    nav ul {
+    /* This rule applies to: nav ul */
+        list-style: none; /* This sets the list-style property */
+        display: flex; /* This sets the display property */
+        gap: 20px; /* This sets the gap property */
+    }
+    
+    nav ul li a {
+    /* This rule applies to: nav ul li a */
+        text-decoration: none; /* This sets the text-decoration property */
+        color: white; /* This sets the color property */
+        font-weight: bold; /* This sets the font-weight property */
+        transition: color 0.3s ease; /* This sets the transition property */
+    }
+    
+    nav ul li a:hover {
+    /* This rule applies to: nav ul li a:hover */
+        color: #f4d03f; /* This sets the color property */
+    }
+    
+    .auth-links {
+    /* This rule applies to: .auth-links */
+        display: flex; /* This sets the display property */
+        gap: 15px; /* This sets the gap property */
+        align-items: center; /* This sets the align-items property */
+    }
+    
+    .auth-links a {
+    /* This rule applies to: .auth-links a */
+        color: white; /* This sets the color property */
+    }
+    
+    /* Search Bar */
+    #search-bar {
+    /* This rule applies to: #search-bar */
+        margin-top: 10px; /* This sets the margin-top property */
+        display: flex; /* This sets the display property */
+        justify-content: center; /* This sets the justify-content property */
+        align-items: center; /* This sets the align-items property */
+        gap: 5px; /* This sets the gap property */
+        width: 60%; /* Shortened width */ /* This sets the width property */
+        max-width: 900px; /* Optional: Maximum width for larger screens */ /* This sets the max-width property */
+        margin-left: auto; /* This sets the margin-left property */
+        margin-right: auto; /* This sets the margin-right property */
+    }
+    
+    #search-bar input {
+    /* This rule applies to: #search-bar input */
+        padding: 10px; /* This sets the padding property */
+        border: 1px solid #ccc; /* This sets the border property */
+        border-radius: 5px; /* This sets the border-radius property */
+        flex: 1; /* This sets the flex property */
+    }
+    
+    #search-bar button {
+    /* This rule applies to: #search-bar button */
+        padding: 10px 20px; /* This sets the padding property */
+        background-color: #e74c3c; /* This sets the background-color property */
+        color: white; /* This sets the color property */
+        border: none; /* This sets the border property */
+        border-radius: 5px; /* This sets the border-radius property */
+        cursor: pointer; /* This sets the cursor property */
+        font-weight: bold; /* This sets the font-weight property */
+        transition: background-color 0.3s ease; /* This sets the transition property */
+    }
+    
+    #search-bar button:hover {
+    /* This rule applies to: #search-bar button:hover */
+        background-color: #c0392b; /* This sets the background-color property */
+    }
+    
+    /* Center Product Section on the Screen */
+    section[role="region"] {
+    /* This rule applies to: section[role="region"] */
+        display: flex; /* This sets the display property */
+        flex-direction: column; /* Stack title and products vertically */ /* This sets the flex-direction property */
+        justify-content: center; /* Center horizontally */ /* This sets the justify-content property */
+        align-items: center; /* This sets the align-items property */
+        margin: 40px auto; /* Add spacing between categories */ /* This sets the margin property */
+        width: 80%; /* This sets the width property */
+        max-width: 1200px; /* This sets the max-width property */
+    }
+    
+    /* Align Category Title to Top Left */
+    section[role="region"] h2 {
+    /* This rule applies to: section[role="region"] h2 */
+        align-self: flex-start; /* Align title to the left */ /* This sets the align-self property */
+        margin-bottom: 10px; /* This sets the margin-bottom property */
+        font-size: 1.8rem; /* This sets the font-size property */
+        font-weight: bold; /* This sets the font-weight property */
+    }
+    
+    /* Horizontal Scrollable Product Section */
+    section[role="region"] ul {
+    /* This rule applies to: section[role="region"] ul */
+        display: flex; /* This sets the display property */
+        gap: 20px; /* This sets the gap property */
+        overflow-x: auto; /* Enable horizontal scrolling */ /* This sets the overflow-x property */
+        scroll-behavior: smooth; /* Smooth scrolling effect */ /* This sets the scroll-behavior property */
+        padding: 0; /* Remove padding */ /* This sets the padding property */
+        border: none; /* Remove border */ /* This sets the border property */
+        background-color: transparent; /* Remove background color */ /* This sets the background-color property */
+        border-radius: 0; /* Remove rounded corners */ /* This sets the border-radius property */
+        box-shadow: none; /* Remove shadow */ /* This sets the box-shadow property */
+    }
+    
+    /* Center Images within List Items */
+    section[role="region"] ul li {
+    /* This rule applies to: section[role="region"] ul li */
+        display: flex; /* This sets the display property */
+        justify-content: center; /* This sets the justify-content property */
+        align-items: center; /* This sets the align-items property */
+        background-color: transparent; /* Remove background color */ /* This sets the background-color property */
+        border-radius: 0; /* Remove rounded corners */ /* This sets the border-radius property */
+        box-shadow: none; /* Remove shadow */ /* This sets the box-shadow property */
+        padding: 0; /* Remove padding */ /* This sets the padding property */
+        margin: 0; /* Remove margins */ /* This sets the margin property */
+        width: auto; /* Allow image to determine width */ /* This sets the width property */
+        height: auto; /* Allow image to determine height */ /* This sets the height property */
+        overflow: visible; /* Prevent clipping */ /* This sets the overflow property */
+    }
+    
+    /* Image Styling */
+    section[role="region"] ul li img {
+    /* This rule applies to: section[role="region"] ul li img */
+        max-width: 200px; /* Set a maximum width for images */ /* This sets the max-width property */
+        max-height: 200px; /* Set a maximum height for images */ /* This sets the max-height property */
+        width: auto; /* Maintain the aspect ratio */ /* This sets the width property */
+        height: auto; /* Maintain the aspect ratio */ /* This sets the height property */
+        object-fit: contain; /* Prevent distortion */ /* This sets the object-fit property */
+        border-radius: 0; /* Remove rounded corners */ /* This sets the border-radius property */
+        box-shadow: none; /* Remove shadow */ /* This sets the box-shadow property */
+        display: block; /* Ensure the image is a block-level element */ /* This sets the display property */
+        margin: 0 auto; /* Center images if needed */ /* This sets the margin property */
+        transition: transform 0.3s ease; /* Smooth hover effect */ /* This sets the transition property */
+    }
+    
+    section[role="region"] ul li:hover img {
+    /* This rule applies to: section[role="region"] ul li:hover img */
+        transform: scale(1.5); /* Enlarge the image on hover */ /* This sets the transform property */
+        z-index: 1; /* Bring the image to the front */ /* This sets the z-index property */
+    }
+    
+    /* Scroll Buttons */
+    .scroll-container {
+    /* This rule applies to: .scroll-container */
+        display: flex; /* This sets the display property */
+        align-items: center; /* This sets the align-items property */
+        gap: 10px; /* This sets the gap property */
+    }
+    
+    .scroll-button {
+    /* This rule applies to: .scroll-button */
+        display: flex; /* This sets the display property */
+        justify-content: center; /* This sets the justify-content property */
+        align-items: center; /* This sets the align-items property */
+        width: 40px; /* This sets the width property */
+        height: 40px; /* This sets the height property */
+        background-color: #1c1c1c; /* This sets the background-color property */
+        color: white; /* This sets the color property */
+        border: none; /* This sets the border property */
+        border-radius: 50%; /* This sets the border-radius property */
+        cursor: pointer; /* This sets the cursor property */
+        font-size: 1.2rem; /* This sets the font-size property */
+        font-weight: bold; /* This sets the font-weight property */
+        transition: background-color 0.3s ease; /* This sets the transition property */
+    }
+    
+    .scroll-button:hover {
+    /* This rule applies to: .scroll-button:hover */
+        background-color: #f4d03f; /* This sets the background-color property */
+    }
+    
+    /* General Layout for Product Details */
+    .product-details {
+    /* This rule applies to: .product-details */
+        display: flex; /* This sets the display property */
+        justify-content: space-between; /* This sets the justify-content property */
+        align-items: flex-start; /* This sets the align-items property */
+        gap: 40px; /* This sets the gap property */
+        max-width: 1200px; /* This sets the max-width property */
+        margin: 40px auto; /* This sets the margin property */
+        padding: 20px; /* This sets the padding property */
+    }
+    
+    /* Left Section (Image + Description) */
+    .product-left {
+    /* This rule applies to: .product-left */
+        flex: 2; /* This sets the flex property */
+    }
+    
+    .product-image img {
+    /* This rule applies to: .product-image img */
+        max-width: 100%; /* This sets the max-width property */
+        border-radius: 10px; /* This sets the border-radius property */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* This sets the box-shadow property */
+        margin-bottom: 20px; /* This sets the margin-bottom property */
+    }
+    
+    .product-description h2 {
+    /* This rule applies to: .product-description h2 */
+        font-size: 1.5rem; /* This sets the font-size property */
+        color: #333; /* This sets the color property */
+        border-bottom: 2px solid #e74c3c; /* This sets the border-bottom property */
+        margin-bottom: 10px; /* This sets the margin-bottom property */
+        padding-bottom: 5px; /* This sets the padding-bottom property */
+    }
+    
+    .product-description p {
+    /* This rule applies to: .product-description p */
+        font-size: 1rem; /* This sets the font-size property */
+        line-height: 1.8; /* This sets the line-height property */
+        color: #666; /* This sets the color property */
+        margin-bottom: 20px; /* This sets the margin-bottom property */
+    }
+    
+    /* Right Section (Buy Now Details) */
+    .product-info {
+    /* This rule applies to: .product-info */
+        flex: 1; /* This sets the flex property */
+        background-color: #f7f7f7; /* This sets the background-color property */
+        border-radius: 10px; /* This sets the border-radius property */
+        padding: 20px; /* This sets the padding property */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* This sets the box-shadow property */
+        position: sticky; /* This sets the position property */
+        top: 20px; /* Distance from the top of the viewport */ /* This sets the top property */
+    }
+    
+    .product-info h1 {
+    /* This rule applies to: .product-info h1 */
+        font-size: 1.8rem; /* This sets the font-size property */
+        font-weight: bold; /* This sets the font-weight property */
+        margin-bottom: 10px; /* This sets the margin-bottom property */
+    }
+    
+    .product-info h2 {
+    /* This rule applies to: .product-info h2 */
+        font-size: 1.5rem; /* This sets the font-size property */
+        margin-bottom: 10px; /* This sets the margin-bottom property */
+        color: #555; /* This sets the color property */
+    }
+    
+    .product-info h3 {
+    /* This rule applies to: .product-info h3 */
+        font-size: 1.2rem; /* This sets the font-size property */
+        color: #777; /* This sets the color property */
+        margin-bottom: 20px; /* This sets the margin-bottom property */
+    }
+    
+    .product-meta p {
+    /* This rule applies to: .product-meta p */
+        margin: 5px 0; /* This sets the margin property */
+        font-size: 1rem; /* This sets the font-size property */
+        color: #555; /* This sets the color property */
+    }
+    
+    .product-actions {
+    /* This rule applies to: .product-actions */
+        display: flex; /* This sets the display property */
+        gap: 10px; /* This sets the gap property */
+        margin-top: 20px; /* This sets the margin-top property */
+    }
+    
+    .buy-now {
+    /* This rule applies to: .buy-now */
+        flex: 1; /* This sets the flex property */
+        padding: 15px 20px; /* This sets the padding property */
+        background-color: #e74c3c; /* This sets the background-color property */
+        color: white; /* This sets the color property */
+        border: none; /* This sets the border property */
+        border-radius: 5px; /* This sets the border-radius property */
+        font-size: 1rem; /* This sets the font-size property */
+        font-weight: bold; /* This sets the font-weight property */
+        cursor: pointer; /* This sets the cursor property */
+        transition: background-color 0.3s ease; /* This sets the transition property */
+    }
+    
+    .buy-now:hover {
+    /* This rule applies to: .buy-now:hover */
+        background-color: #c0392b; /* This sets the background-color property */
+    }
+    
+    .wishlist {
+    /* This rule applies to: .wishlist */
+        width: 50px; /* This sets the width property */
+        height: 50px; /* This sets the height property */
+        background-color: #f0f0f0; /* This sets the background-color property */
+        border: none; /* This sets the border property */
+        border-radius: 50%; /* This sets the border-radius property */
+        display: flex; /* This sets the display property */
+        justify-content: center; /* This sets the justify-content property */
+        align-items: center; /* This sets the align-items property */
+        cursor: pointer; /* This sets the cursor property */
+    }
+    
+    .wishlist img {
+    /* This rule applies to: .wishlist img */
+        width: 20px; /* This sets the width property */
+        height: 20px; /* This sets the height property */
+    }
+    
+    /* Adjust layout for Delivery and Basket sections */
+    main.buy-page {
+    /* This rule applies to: main.buy-page */
+        display: flex; /* This sets the display property */
+        justify-content: space-between; /* This sets the justify-content property */
+        padding: 40px; /* This sets the padding property */
+        max-width: 1200px; /* Restrict overall container width */ /* This sets the max-width property */
+        margin: 0 auto; /* This sets the margin property */
+    }
+    
+    /* Adjust Delivery section position */
+    section.delivery-form {
+    /* This rule applies to: section.delivery-form */
+        flex: 2; /* This sets the flex property */
+        margin-right: 40px; /* Increase right margin to shift the basket further right */ /* This sets the margin-right property */
+    }
+    
+    /* Increase gap between Delivery and Payment */
+    section.delivery-form h2 + form {
+    /* This rule applies to: section.delivery-form h2 + form */
+        margin-bottom: 60px; /* Larger spacing between Delivery and Payment sections */ /* This sets the margin-bottom property */
+    }
+    
+    /* Adjust Basket section position */
+    section.basket-section {
+    /* This rule applies to: section.basket-section */
+        flex: 1; /* This sets the flex property */
+        margin-left: auto; /* Push the basket to the far right */ /* This sets the margin-left property */
+        background-color: #444; /* This sets the background-color property */
+        color: white; /* This sets the color property */
+        padding: 20px; /* This sets the padding property */
+        border-radius: 10px; /* This sets the border-radius property */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* This sets the box-shadow property */
+    }
+    
+    /* Adjust Basket contents */
+    section.basket-section h2 {
+    /* This rule applies to: section.basket-section h2 */
+        font-size: 1.8rem; /* This sets the font-size property */
+        margin-bottom: 20px; /* This sets the margin-bottom property */
+    }
+    
+    figure.basket-item img {
+    /* This rule applies to: figure.basket-item img */
+        width: 60px; /* Smaller image for basket items */ /* This sets the width property */
+        height: 60px; /* This sets the height property */
+        border-radius: 5px; /* This sets the border-radius property */
+        margin-right: 10px; /* This sets the margin-right property */
+    }
+    
+    figure.basket-item figcaption p {
+    /* This rule applies to: figure.basket-item figcaption p */
+        margin: 5px 0; /* This sets the margin property */
+        font-size: 0.9rem; /* This sets the font-size property */
+        color: #ddd; /* This sets the color property */
+    }
+    
+    /* Basket Total */
+    section.basket-total p {
+    /* This rule applies to: section.basket-total p */
+        font-size: 1.1rem; /* This sets the font-size property */
+        margin: 10px 0; /* This sets the margin property */
+        color: #fff; /* This sets the color property */
+    }
+    
+    section.basket-total hr {
+    /* This rule applies to: section.basket-total hr */
+        border: 0.5px solid #777; /* This sets the border property */
+        margin: 15px 0; /* This sets the margin property */
+    }
+    
+    /* Promo Code Input */
+    .promo-code {
+    /* This rule applies to: .promo-code */
+        padding: 10px; /* This sets the padding property */
+        width: 100%; /* This sets the width property */
+        margin-top: 10px; /* This sets the margin-top property */
+        border: 1px solid #ccc; /* This sets the border property */
+        border-radius: 5px; /* This sets the border-radius property */
+        background-color: #ddd; /* This sets the background-color property */
+        color: #333; /* This sets the color property */
+    }
+    
+    .apply-button {
+    /* This rule applies to: .apply-button */
+        padding: 10px; /* This sets the padding property */
+        background-color: #e74c3c; /* This sets the background-color property */
+        color: white; /* This sets the color property */
+        border: none; /* This sets the border property */
+        border-radius: 5px; /* This sets the border-radius property */
+        cursor: pointer; /* This sets the cursor property */
+        font-size: 1rem; /* This sets the font-size property */
+        margin-top: 10px; /* This sets the margin-top property */
+    }
+    
+    .apply-button:hover {
+    /* This rule applies to: .apply-button:hover */
+        background-color: #c0392b; /* This sets the background-color property */
+    }
+    
+    
+    /* Hidden class for payment form */
+    .hidden {
+    /* This rule applies to: .hidden */
+        display: none; /* This sets the display property */
+      }  
+    
+    /* Footer */
+    footer {
+    /* This rule applies to: footer */
+        background-color: #1c1c1c; /* This sets the background-color property */
+        color: white; /* This sets the color property */
+        padding: 30px 20px; /* This sets the padding property */
+        display: flex; /* This sets the display property */
+        flex-wrap: wrap; /* This sets the flex-wrap property */
+        gap: 20px; /* This sets the gap property */
+        justify-content: space-between; /* This sets the justify-content property */
+        border-top: 5px solid #333; /* This sets the border-top property */
+    }
+    
+    footer section {
+    /* This rule applies to: footer section */
+        flex: 1; /* This sets the flex property */
+        min-width: 200px; /* This sets the min-width property */
+    }
+    
+    footer h3 {
+    /* This rule applies to: footer h3 */
+        font-size: 1.2rem; /* This sets the font-size property */
+        margin-bottom: 10px; /* This sets the margin-bottom property */
+        color: #f4d03f; /* This sets the color property */
+    }
+    
+    footer p {
+    /* This rule applies to: footer p */
+        margin-bottom: 10px; /* This sets the margin-bottom property */
+    }
+    
+    footer ul {
+    /* This rule applies to: footer ul */
+        list-style: none; /* This sets the list-style property */
+        padding: 0; /* This sets the padding property */
+    }
+    
+    footer ul li {
+    /* This rule applies to: footer ul li */
+        margin-bottom: 5px; /* This sets the margin-bottom property */
+    }
+    
+    footer ul li a {
+    /* This rule applies to: footer ul li a */
+        color: white; /* This sets the color property */
+        text-decoration: none; /* This sets the text-decoration property */
+        transition: color 0.3s ease; /* This sets the transition property */
+    }
+    
+    footer ul li a:hover {
+    /* This rule applies to: footer ul li a:hover */
+        color: #f4d03f; /* This sets the color property */
+    }
+    
+    footer form {
+    /* This rule applies to: footer form */
+        display: flex; /* This sets the display property */
+        gap: 5px; /* This sets the gap property */
+    }
+    
+    footer input {
+    /* This rule applies to: footer input */
+        flex: 1; /* This sets the flex property */
+        padding: 10px; /* This sets the padding property */
+        border: 1px solid #ccc; /* This sets the border property */
+        border-radius: 5px; /* This sets the border-radius property */
+    }
+    
+    footer button {
+    /* This rule applies to: footer button */
+        padding: 10px 20px; /* This sets the padding property */
+        background-color: #e74c3c; /* This sets the background-color property */
+        color: white; /* This sets the color property */
+        border: none; /* This sets the border property */
+        border-radius: 5px; /* This sets the border-radius property */
+        cursor: pointer; /* This sets the cursor property */
+        font-weight: bold; /* This sets the font-weight property */
+        transition: background-color 0.3s ease; /* This sets the transition property */
+    }
+    
+    footer button:hover {
+    /* This rule applies to: footer button:hover */
+        background-color: #c0392b; /* This sets the background-color property */
+    }
+    
+    /* Social Icons Styling */
+    .social-icons {
+    /* This rule applies to: .social-icons */
+        display: flex; /* This sets the display property */
+        gap: 15px; /* This sets the gap property */
+        margin-top: 10px; /* This sets the margin-top property */
+    }
+    
+    .social-icons a img {
+    /* This rule applies to: .social-icons a img */
+        width: 40px; /* This sets the width property */
+        height: 40px; /* This sets the height property */
+        transition: transform 0.3s ease; /* This sets the transition property */
+    }
+    
+    .social-icons a:hover img {
+    /* This rule applies to: .social-icons a:hover img */
+        transform: scale(1.1); /* Slight zoom on hover */ /* This sets the transform property */
+    }
+    
+    /* Responsive Footer */
+    @media (max-width: 768px) {
+    /* This rule applies to: @media (max-width: 768px) */
+        footer {
+    /* This rule applies to: footer */
+            flex-direction: column; /* This sets the flex-direction property */
+            gap: 20px; /* This sets the gap property */
+        }
+    }
+    

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding and responsive viewport settings for mobile compatibility -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Link to external CSS file for styling -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Link to external JavaScript file, deferred loading to improve page load speed -->
+  <script src="scripts.js" defer></script>
+  
+  <!-- Title of the webpage -->
+  <title>Record Playahs</title>
+</head>
+<body>
+  <!-- Header section containing the main navigation and search bar -->
+  <header>
+    <nav>
+      <!-- Logo with a link back to the homepage -->
+      <a href="#"><img src="images/record-playahs-high-resolution-logo-transparent.png" alt="Record Playahs Logo" id="logo"></a>
+      
+      <!-- Navigation links for various sections of the site -->
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Vinyl Records</a></li>
+        <li><a href="#">New Arrival</a></li>
+        <li><a href="#">Visit Us</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+      
+      <!-- Authentication links for Register, Login, and Cart -->
+      <div class="auth-links">
+        <a href="#">Register</a>
+        <a href="#">Login</a>
+        <a href="buy-page.html"><img src="images/cart-icon.png" alt="Cart"></a>
+      </div>
+    </nav>
+    
+    <!-- Search bar form for searching records on the website -->
+    <form id="search-bar">
+      <input type="text" placeholder="Search for record">
+      <button type="submit">Search</button>
+    </form>
+  </header>
+
+  <!-- Main content section of the website -->
+  <main>
+    <!-- Trending Section with a list of popular albums -->
+    <section id="trending" role="region" aria-labelledby="trending-products">
+      <h2 id="trending-products">Trending Products</h2>
+      <div class="carousel-container">
+        <!-- Buttons to scroll through the carousel of albums -->
+        <button class="carousel-button left" aria-label="Scroll Left">&lt;</button>
+        
+        <!-- Track containing the list of trending albums -->
+        <div class="carousel-track">
+          <ul role="list">
+            <li><a href="product-page-weezer.html"><img src="images/weezer.jpg" alt="Weezer Album"></a></li>
+            <li><a href="product-page-yachty.html"><img src="images/lil yachty.jpg" alt="Lil Yachty Album"></a></li>
+            <li><a href="product-page-frank.html"><img src="images/frank-ocean.jpg" alt="Frank Ocean Album"></a></li>
+            <li><img src="images/malcolm-todd.jpg" alt="Malcolm Todd Album"></li>
+            <li><img src="images/surf-curse.jpg" alt="Surf Curse Album"></li>
+            <li><img src="images/sufjan-stevens.jpg" alt="Call Me By Your Name"></li>
+            <li><img src="images/between-friends.jpg" alt="Between Friends Album"></li>
+            <li><img src="images/declan-mckenna.jpg" alt="Declan Mckenna Album"></li>
+            <li><img src="images/wallows.jpg" alt="Wallows Album"></li>
+            <li><img src="images/salvia-path.jpg" alt="Salvia Path Album"></li>
+          </ul>
+        </div>
+        
+        <!-- Button to scroll the carousel right -->
+        <button class="carousel-button right" aria-label="Scroll Right">&gt;</button>
+      </div>
+    </section>
+
+    <!-- New Releases Section displaying newly released albums -->
+    <section id="new-releases" role="region" aria-labelledby="new-releases-products">
+      <h2 id="new-releases-products">New Releases</h2>
+      <div class="carousel-container">
+        <!-- Scroll buttons for the carousel -->
+        <button class="carousel-button left" aria-label="Scroll Left">&lt;</button>
+        
+        <!-- Track for displaying the new release albums -->
+        <div class="carousel-track">
+          <ul role="list">
+            <li><img src="images/hers.jpg" alt="Her's Album"></li>
+            <li><img src="images/travis-scott.jpg" alt="Travis The Scott"></li>
+            <li><img src="images/sabrina-carpenter.jpg" alt="Sabrina Carpenter"></li>
+            <li><img src="images/weeknd.jpg" alt="weeknd"></li>
+            <li><img src="images/kendrick.jpg" alt="KDot"></li>
+            <li><img src="images/clairo.jpg" alt="Clairo"></li>
+            <li><img src="images/igor.jpg" alt="Igor"></li>
+            <li><img src="images/guts.jpg" alt="Guts"></li>
+            <li><img src="images/clancy.jpg" alt="21 Pilots"></li>
+            <li><img src="images/billie.jpg" alt="Billie Eillish"></li>
+          </ul>
+        </div>
+        
+        <!-- Button to scroll the carousel right -->
+        <button class="carousel-button right" aria-label="Scroll Right">&gt;</button>
+      </div>
+    </section>
+
+    <!-- Blast From The Past Section for classic albums -->
+    <section id="blast-from-past" role="region" aria-labelledby="blast-from-past-products">
+      <h2 id="blast-from-past-products">Blast From The Past</h2>
+      <div class="carousel-container">
+        <!-- Scroll buttons for the carousel -->
+        <button class="carousel-button left" aria-label="Scroll Left">&lt;</button>
+        
+        <!-- Track for displaying past albums -->
+        <div class="carousel-track">
+          <ul role="list">
+            <li><a href="product-page-weezer.html"><img src="images/weezer.jpg" alt="Weezer Album"></a></li>
+            <li><img src="images/radiohead.jpg" alt="Lil Yachty Album"></li>
+            <li><img src="images/tears.jpg" alt="Frank Ocean Album"></li>
+            <li><img src="images/nirvana.jpg" alt="Malcolm Todd Album"></li>
+            <li><img src="images/blondie.jpg" alt="Surf Curse Album"></li>
+            <li><img src="images/talking-heads.jpg" alt="Call Me By Your Name"></li>
+            <li><img src="images/david-bowie.jpg" alt="Between Friends Album"></li>
+            <li><img src="images/fleetwood.jpg" alt="Declan Mckenna Album"></li>
+            <li><img src="images/queen.jpg" alt="Wallows Album"></li>
+            <li><img src="images/rolling-stones.jpg" alt="Salvia Path Album"></li>
+          </ul>
+        </div>
+        
+        <!-- Button to scroll the carousel right -->
+        <button class="carousel-button right" aria-label="Scroll Right">&gt;</button>
+      </div>
+    </section>
+
+    <!-- Pop Hits Section displaying popular albums -->
+    <section id="pop-hits" role="region" aria-labelledby="pop-hits-products">
+      <h2 id="pop-hits-products">Pop Hits</h2>
+      <div class="carousel-container">
+        <!-- Scroll buttons for the carousel -->
+        <button class="carousel-button left" aria-label="Scroll Left">&lt;</button>
+        
+        <!-- Track for displaying popular pop albums -->
+        <div class="carousel-track">
+          <ul role="list">
+            <li><img src="images/sabrina-carpenter.jpg" alt="Album"></li>
+            <li><img src="images/clairo.jpg" alt="Album"></li>
+            <li><img src="images/dayglow-album.jpg" alt="Album"></li>
+            <li><img src="images/malcolm-todd.jpg" alt="Album"></li>
+            <li><img src="images/marias.jpg" alt="Album"></li>
+            <li><img src="images/beabadoobee.jpg" alt="Album Name"></li>
+            <li><img src="images/chappel-roan.jpg" alt="Album"></li>
+            <li><img src="images/declan-mckenna.jpg" alt="Declan Mckenna Album"></li>
+            <li><img src="images/wallows.jpg" alt="Wallows Album"></li>
+            <li><img src="images/alfie.jpg" alt="Album"></li>
+          </ul>
+        </div>
+        
+        <!-- Button to scroll the carousel right -->
+        <button class="carousel-button right" aria-label="Scroll Right">&gt;</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer section containing contact and social media links -->
+  <footer>
+    <section>
+      <h3>Connect With Us</h3>
+      <p>Follow us on our social media channels for updates.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="TikTok"><img src="images/tiktok-icon.png" alt="TikTok Icon"></a>
+        <a href="#" aria-label="Facebook"><img src="images/facebook-icon.png" alt="Facebook Icon"></a>
+        <a href="#" aria-label="Instagram"><img src="images/instagram-icon.png" alt="Instagram Icon"></a>
+      </div>
+    </section>
+    
+    <section>
+      <h3>Keep up With Us</h3>
+      <p>Exclusives, pre-orders, back in stock — sign up to receive emails!</p>
+      <form>
+        <input type="email" placeholder="Your Email">
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+    
+    <section>
+      <h3>Customer Service</h3>
+      <ul>
+        <li><a href="#">Your Orders</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Accessibility</a></li>
+      </ul>
+    </section>
+  </footer>
+</body>
+</html>
